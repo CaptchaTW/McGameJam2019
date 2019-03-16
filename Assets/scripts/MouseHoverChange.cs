@@ -5,12 +5,28 @@ using UnityEngine;
 public class MouseHoverChange : MonoBehaviour
 {
     [SerializeField]
-    Texture2D cursor;
-    Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+    Texture2D cursorLocked;
+    [SerializeField]
+    Texture2D cursorUnlocked;
+    Vector2 mousePosition;
+
+    void Start()
+    {
+        mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+    }
 
     void OnMouseEnter()
     {
-        Cursor.SetCursor(cursor, mousePosition, CursorMode.Auto);
+        if (gameObject.tag == "Locked")
+        {
+            Debug.Log("hover locked");
+            Cursor.SetCursor(cursorLocked, mousePosition, CursorMode.Auto);
+        }
+        else
+        {
+            Debug.Log("hover unlocked");
+            Cursor.SetCursor(cursorUnlocked, mousePosition, CursorMode.Auto);
+        }
     }
 
     void OnMouseExit()
