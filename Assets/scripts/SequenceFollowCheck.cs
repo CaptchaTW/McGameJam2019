@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SequenceFollowCheck : MonoBehaviour
 {
  public  static int CountMax = 4;
@@ -11,7 +12,10 @@ public class SequenceFollowCheck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        correctPattern.Enqueue(1);
+        correctPattern.Enqueue(2);
+        correctPattern.Enqueue(3);
+        correctPattern.Enqueue(4);
     }
 
     // Update is called once per frame
@@ -21,11 +25,18 @@ public class SequenceFollowCheck : MonoBehaviour
     }
     bool CheckSequence()
     {
-        if (correctPattern.ToArray().Equals(playerSequence.ToArray()))
+        Debug.Log(playerSequence.ToArray()[0]);
+        Debug.Log(correctPattern.ToArray()[0]);
+        
+        if (playerSequence.ToArray()[0] == correctPattern.ToArray()[0] && playerSequence.ToArray()[1] == correctPattern.ToArray()[1] &&playerSequence.ToArray()[2] == correctPattern.ToArray()[2] && playerSequence.ToArray()[3] == correctPattern.ToArray()[3])
         {
+            
             return true;
         }
-        else return false;
+      
+        else
+            
+        return false;
     }
 
 }
