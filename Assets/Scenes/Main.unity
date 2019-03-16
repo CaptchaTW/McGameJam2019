@@ -228,6 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Schoolyard
   x: 0
+  key: 0
 --- !u!65 &1314613630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -310,7 +311,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1620704928}
   - component: {fileID: 1620704927}
-  - component: {fileID: 1620704926}
   m_Layer: 0
   m_Name: IntroEmailBG
   m_TagString: Untagged
@@ -318,20 +318,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1620704926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620704925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneName: Schoolyard
-  x: 0
 --- !u!212 &1620704927
 SpriteRenderer:
   m_ObjectHideFlags: 0
