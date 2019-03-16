@@ -6,13 +6,14 @@ public class MouseFollow : MonoBehaviour
     
 {
     public float speed = 8f;
-    public int leftBound;
-    public int rightBound;
+    public float leftBound;
+    public float rightBound;
     Vector3 posBounds;
 
     // Start is called before the first frame update
     void Start()
     {
+        transform.position = new Vector3(GlobalVars.cameraX, 0, -10);
         posBounds = transform.position;
     }
 
@@ -37,7 +38,7 @@ public class MouseFollow : MonoBehaviour
         }
         
 
-        transform.position = posBounds + new Vector3(Random.Range(-0.02f, 0.02f), Random.Range(-0.02f, 0.02f), Random.Range(-0.02f, 0.02f));
+        transform.position = posBounds + new Vector3(Random.Range(-0.005f, 0.005f), Random.Range(-0.005f, 0.005f), Random.Range(-0.02f, 0.02f));
     }
 
 }
