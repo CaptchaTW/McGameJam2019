@@ -4,34 +4,39 @@ using UnityEngine;
 
 public class SoundScript : MonoBehaviour
 {
-    [SerializeField] public static AudioClip sound1, sound2, sound3, sound4, sound5;
+    [SerializeField] public static AudioClip schoolbell;
+    [SerializeField] public static AudioClip note1, note2, note3, note4;
+
     static AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        sound1 = Resources.Load<AudioClip>("sound1");
-        sound2 = Resources.Load<AudioClip>("sound2");
-        sound3 = Resources.Load<AudioClip>("sound3");
-        sound4 = Resources.Load<AudioClip>("sound4");
-        sound5 = Resources.Load<AudioClip>("sound5");
+        schoolbell = Resources.Load<AudioClip>("schoolbell");
+        note1 = Resources.Load<AudioClip>("note1");
+        note2 = Resources.Load<AudioClip>("note2");
+        note3 = Resources.Load<AudioClip>("note3");
+        note4 = Resources.Load<AudioClip>("note4");
     }
 
     public static void playSound(string audioClip)
     {
         switch (audioClip)
         {
-            case "sound1":
-                audioSource.PlayOneShot(sound1);
+            case "schoolbell":
+                audioSource.PlayOneShot(schoolbell);
                 break;
-            case "sound2":
-                audioSource.PlayOneShot(sound2);
+            case "note1":
+                audioSource.PlayOneShot(note1);
                 break;
-            case "sound3":
-                audioSource.PlayOneShot(sound3);
+            case "note2":
+                audioSource.PlayOneShot(note2);
                 break;
-            case "sound4":
-                audioSource.PlayOneShot(sound4);
+            case "note3":
+                audioSource.PlayOneShot(note3);
+                break;
+            case "note4":
+                audioSource.PlayOneShot(note4);
                 break;
 
         }
