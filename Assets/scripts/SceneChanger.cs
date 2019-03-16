@@ -6,6 +6,7 @@ public class SceneChanger : MonoBehaviour
 {
     bool wait = false;
 
+    public Camera a1, a2;
 
     public string SceneName;
     public float x;
@@ -21,10 +22,25 @@ public class SceneChanger : MonoBehaviour
     {
 
     }
+    IEnumerator Pause1()
+    {
+        Debug.Log("enumerator");
+        wait = true;
+        a1.gameObject.SetActive(false);
+        a2.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(0.2f);
+        Debug.Log("waited");
+        wait = false;
+        SceneManager.LoadScene(SceneName);
+    }
     IEnumerator Pause()
     {
         Debug.Log("enumerator");
         wait = true;
+        a1.gameObject.SetActive(false);
+        a2.gameObject.SetActive(true);
+
         yield return new WaitForSeconds(0.7f);
         Debug.Log("waited");
         wait = false;
@@ -60,7 +76,11 @@ public class SceneChanger : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene(SceneName);
+                if (!wait)
+                {
+                    StartCoroutine(Pause1());
+                }
+                //SceneManager.LoadScene(SceneName);
                 Debug.Log("Clicked");
             }
             GlobalVars.cameraX = x;
