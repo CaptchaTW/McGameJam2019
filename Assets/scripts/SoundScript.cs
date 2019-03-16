@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SoundScript : MonoBehaviour
 {
-    [SerializeField] public static AudioClip schoolbell;
-    [SerializeField] public static AudioClip note1, note2, note3, note4;
+    public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps;
+    public static AudioClip valve, doorOpen, doorClose, bgNoise;
+    public static AudioClip note1, note2, note3, note4;
 
     static AudioSource audioSource;
 
@@ -17,12 +18,23 @@ public class SoundScript : MonoBehaviour
         note2 = Resources.Load<AudioClip>("note2");
         note3 = Resources.Load<AudioClip>("note3");
         note4 = Resources.Load<AudioClip>("note4");
+        doorcreak = Resources.Load<AudioClip>("doorcreak");
+        floorcreak = Resources.Load<AudioClip>("floorcreak");
+        wind = Resources.Load<AudioClip>("wind");
+        footsteps = Resources.Load<AudioClip>("footsteps");
+        valve = Resources.Load<AudioClip>("valve");
+        doorOpen = Resources.Load<AudioClip>("doorOpen");
+        doorClose = Resources.Load<AudioClip>("doorClose");
+        bgNoise = Resources.Load<AudioClip>("bgNoise");
     }
 
     public static void playSound(string audioClip)
     {
         switch (audioClip)
         {
+            case "bgNoise":
+                audioSource.PlayOneShot(bgNoise);
+                break;
             case "schoolbell":
                 audioSource.PlayOneShot(schoolbell);
                 break;
@@ -38,7 +50,27 @@ public class SoundScript : MonoBehaviour
             case "note4":
                 audioSource.PlayOneShot(note4);
                 break;
-
+            case "doorcreak":
+                audioSource.PlayOneShot(doorcreak);
+                break;
+            case "floorcreak":
+                audioSource.PlayOneShot(floorcreak);
+                break;
+            case "wind":
+                audioSource.PlayOneShot(wind);
+                break;
+            case "footsteps":
+                audioSource.PlayOneShot(footsteps);
+                break;
+            case "valve":
+                audioSource.PlayOneShot(valve);
+                break;
+            case "doorOpen":
+                audioSource.PlayOneShot(doorOpen);
+                break;
+            case "doorClose":
+                audioSource.PlayOneShot(doorClose);
+                break;
         }
     }
 }
