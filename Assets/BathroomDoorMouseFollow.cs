@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseFollow : MonoBehaviour
-    
+public class BathroomDoorMouseFollow : MonoBehaviour
 {
+
     float speed = 8f;
-    // Start is called before the first frame update
-    public Transform lockerbg;
+    public Transform bathroomdoorbg;
     Vector3 posBounds;
 
+    // Start is called before the first frame update
     void Start()
     {
         posBounds = transform.position;
@@ -18,15 +18,15 @@ public class MouseFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.mousePosition.x < Screen.width / 4 && transform.position.x < 9)
+        if (Input.mousePosition.x < Screen.width / 4 && transform.position.x < 5.5)
         {
 
             Debug.Log(transform.position.x);
 
             posBounds = new Vector3(posBounds.x + Time.deltaTime * speed, posBounds.y, transform.position.z);
-           
+
         }
-        else if (Input.mousePosition.x > (3 * Screen.width) / 4 && transform.position.x > -73)
+        else if (Input.mousePosition.x > (3 * Screen.width) / 4 && transform.position.x > -5.5)
         {
             Debug.Log(transform.position.x);
             //transform.position -= new Vector3(Time.deltaTime * speed, transform.position.y, transform.position.z);
@@ -34,9 +34,8 @@ public class MouseFollow : MonoBehaviour
             posBounds = new Vector3(posBounds.x - Time.deltaTime * speed, posBounds.y, transform.position.z);
 
         }
-        
 
         transform.position = posBounds + new Vector3(Random.Range(-0.02f, 0.02f), Random.Range(-0.02f, 0.02f), Random.Range(-0.02f, 0.02f));
-    }
 
+    }
 }
