@@ -6,4 +6,7 @@ public static class GlobalVars
 {
 
 	public static float cameraX;
+ 
+    public static bool[] inventoryOfKeys = new bool[5];
+ 
 }

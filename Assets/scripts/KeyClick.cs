@@ -6,6 +6,7 @@ public class KeyClick: MonoBehaviour
 {
    
     GameObject Player;
+    public int keyNumber;
     public GameObject Key;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class KeyClick: MonoBehaviour
     void OnMouseDown()
     {
         Player = GameObject.Find("Player");
-        Inventory.InventoryKeys.inventoryOfKeys[0] = true ;
+        GlobalVars.inventoryOfKeys[keyNumber] = true ;
         Key.gameObject.SetActive(false);
 
     }
