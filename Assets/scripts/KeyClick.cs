@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeyClick: MonoBehaviour
 {
+   
     GameObject Player;
     public GameObject Key;
     // Start is called before the first frame update
