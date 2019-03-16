@@ -28,7 +28,7 @@ public class SoundScript : MonoBehaviour
         bgNoise = Resources.Load<AudioClip>("bgNoise");
     }
 
-    public static void playSound(string audioClip)
+    public static void PlaySound(string audioClip)
     {
         switch (audioClip)
         {
