@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MusicRoom.unity
     guid: 5e88313554a56e0479289375ea6cb196
+  - enabled: 1
+    path: Assets/Scenes/Piano.unity
+    guid: 51f23f6d6f18cb94ca877fcb6782cbd4
   m_configObjects: {}

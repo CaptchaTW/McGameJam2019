@@ -17,6 +17,10 @@ public class SequenceFollowCheck : MonoBehaviour
         correctPattern.Enqueue(2);
         correctPattern.Enqueue(3);
         correctPattern.Enqueue(4);
+        playerSequence.Enqueue(0);
+        playerSequence.Enqueue(0);
+        playerSequence.Enqueue(0);
+        playerSequence.Enqueue(0);
     }
 
     // Update is called once per frame
