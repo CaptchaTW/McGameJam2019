@@ -6,7 +6,7 @@ public class SceneChanger : MonoBehaviour
 {
     
     public string SceneName;
-    // public int x;
+    public float x;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,7 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(SceneName);
         Debug.Log("Clicked");
-        // Camera.main.transform.position.x = x;
+        GlobalVars.cameraX = x;
+        // GameObject.Find("Main Camera").transform.position = new Vector3(x, 0, 0);
     }
 }

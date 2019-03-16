@@ -14,7 +14,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BathroomDoor.unity
     guid: 287b91a95ecfc2344b50bd5e0fb5bf8b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HallwayEnd.unity
     guid: 61d68adbc36573b4e898637a9cbc694c
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 5fd41159f83387d4d94c8ef0a834ff10
+  - enabled: 1
+    path: Assets/Scenes/Basement.unity
+    guid: cb662419377f0214a84ff59cb7b61027
+  - enabled: 1
+    path: Assets/Scenes/Bathroom.unity
+    guid: c44f9357e69088f4e9505031cb201341
+  - enabled: 1
+    path: Assets/Scenes/Classroom.unity
+    guid: c68d2a5465fc2314b913e740b9d971a1
+  - enabled: 1
+    path: Assets/Scenes/HallwayStairs.unity
+    guid: 874ab69c390d99e4a938f81269174543
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 356270adeb42d6441a851ea6a1ad2448
+  - enabled: 1
+    path: Assets/Scenes/Rooftop.unity
+    guid: ff08c4f460c33c04da59160f2e1515e6
+  - enabled: 1
+    path: Assets/Scenes/Staircase.unity
+    guid: ffdda240b37f0124b8f352db3f53cf00
+  - enabled: 1
+    path: Assets/Scenes/StairsDown.unity
+    guid: 76772de8c177d0140ab9bfbb75a2be3c
   m_configObjects: {}
