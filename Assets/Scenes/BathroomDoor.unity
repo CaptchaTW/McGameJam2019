@@ -126,6 +126,8 @@ GameObject:
   - component: {fileID: 111514413}
   - component: {fileID: 111514415}
   - component: {fileID: 111514414}
+  - component: {fileID: 111514417}
+  - component: {fileID: 111514416}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -320,6 +322,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4169a47335171b34eb69920e71271918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &111514416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111514409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9191284b058eef549b7108b5f04e1117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensityMultiplier: 3
+  generalIntensity: 0.5
+  blackIntensity: 1
+  whiteIntensity: 1
+  midGrey: 0.2
+  dx11Grain: 0
+  softness: 0
+  monochrome: 0
+  intensities: {x: 1, y: 1, z: 1}
+  tiling: {x: 64, y: 64, z: 64}
+  monochromeTiling: 64
+  filterMode: 1
+  noiseTexture: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
+  noiseShader: {fileID: 4800000, guid: b0249d8c935344451aa4de6db76f0688, type: 3}
+  dx11NoiseShader: {fileID: 4800000, guid: 8b30686bb4322ab42ad5eb50a0210b58, type: 3}
+--- !u!114 &111514417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111514409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3309686a9fbbe6e42a182d5e0257704c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  threshold: 0
+  blurSpread: 1
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  contrastCompositeShader: {fileID: 4800000, guid: 273404942eede4ea1883ca1fb2942507,
+    type: 3}
 --- !u!1 &250856139
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +478,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  a1: {fileID: 0}
+  a2: {fileID: 0}
   SceneName: Bathroom
   x: 0
   key: 2
@@ -538,6 +587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  a1: {fileID: 0}
+  a2: {fileID: 0}
   SceneName: Lockers
   x: 19
   key: 0
@@ -645,6 +696,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  a1: {fileID: 0}
+  a2: {fileID: 0}
   SceneName: HallwayStairs
   x: 0
   key: 0
