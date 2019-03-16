@@ -24,7 +24,7 @@ public class KeyClick: MonoBehaviour
         Player = GameObject.Find("Player");
         GlobalVars.inventoryOfKeys[keyNumber] = true ;
         Key.gameObject.SetActive(false);
-
+        Debug.Log("Key " + keyNumber + " got");
     }
 
 }
