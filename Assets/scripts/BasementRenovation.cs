@@ -15,8 +15,9 @@ public class BasementRenovation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (door.tag == "Unlocked")
+        if (GlobalVars.inventoryOfKeys[4])
         {
+            door.tag = "Unlocked";
             SpriteR.enabled = false;
         }
     }
