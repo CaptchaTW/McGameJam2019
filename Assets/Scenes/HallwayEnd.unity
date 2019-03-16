@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: MusicRoom
-  x: 0
+  x: 24.5
   key: 1
 --- !u!65 &1347088060
 BoxCollider:
