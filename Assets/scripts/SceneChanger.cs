@@ -23,7 +23,6 @@ public class SceneChanger : MonoBehaviour
     }
     IEnumerator Pause()
     {
-        Debug.Log("enumerator");
         wait = true;
         yield return new WaitForSeconds(0.7f);
         Debug.Log("waited");
@@ -40,9 +39,19 @@ public class SceneChanger : MonoBehaviour
         }
         else if (gameObject.tag != "Locked")
         {
-            if (SceneName.Equals("MusicRoom") || SceneName.Equals("Classroom") || SceneName.Equals("Library") || SceneName.Equals("Bathroom"))
+            if (SceneName.Equals("MusicRoom") || 
+                SceneName.Equals("Classroom") ||
+                (SceneName.Equals("Staircase") && !SceneManager.GetActiveScene().name.Equals("StairsDown"))||
+                (SceneName.Equals("Library") && !SceneManager.GetActiveScene().name.Equals("RedBook")) || 
+                SceneName.Equals("Bathroom")|| 
+                (SceneName.Equals("HallwayStairs") && (SceneManager.GetActiveScene().name.Equals("MusicRoom") ||
+                SceneManager.GetActiveScene().name.Equals("Classroom") ||
+                SceneManager.GetActiveScene().name.Equals("Library") ||
+                SceneManager.GetActiveScene().name.Equals("Bathroom"))))
+
             {
                 SoundScript.PlaySound("doorOpen");
+                Debug.Log("door opened");
 
                 if (!wait)
                 {
@@ -52,6 +61,7 @@ public class SceneChanger : MonoBehaviour
             else if (SceneName.Equals("Rooftop") || SceneName.Equals("StairsDown"))
             {
                 SoundScript.PlaySound("footsteps");
+                Debug.Log("footsteps");
 
                 if (!wait)
                 {
