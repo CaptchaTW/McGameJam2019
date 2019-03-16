@@ -20,12 +20,12 @@ public class MouseHoverChange : MonoBehaviour
         if (gameObject.tag == "Locked")
         {
             Debug.Log("hover locked");
-            Cursor.SetCursor(cursorLocked, mousePosition, CursorMode.Auto);
+            Cursor.SetCursor(cursorLocked, Vector2.zero, CursorMode.Auto);
         }
         else
         {
             Debug.Log("hover unlocked");
-            Cursor.SetCursor(cursorUnlocked, mousePosition, CursorMode.Auto);
+            Cursor.SetCursor(cursorUnlocked, Vector2.zero, CursorMode.Auto);
         }
     }
 
