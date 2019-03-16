@@ -225,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: HallwayEnd
   x: 0
+  key: 0
 --- !u!65 &845856896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -331,6 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: BathroomDoor
   x: 10
+  key: 0
 --- !u!65 &1065085015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -437,6 +439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Staircase
   x: 0
+  key: 0
 --- !u!65 &1145667691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -524,7 +527,7 @@ GameObject:
   - component: {fileID: 1215962701}
   m_Layer: 0
   m_Name: Library
-  m_TagString: Untagged
+  m_TagString: Locked
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -543,6 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Library
   x: 6.8
+  key: 3
 --- !u!65 &1215962702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -747,6 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Classroom
   x: 35
+  key: 0
 --- !u!65 &1471302083
 BoxCollider:
   m_ObjectHideFlags: 0
