@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: BathroomDoor
-  x: 4
+  x: 1.348
 --- !u!65 &731881694
 BoxCollider:
   m_ObjectHideFlags: 0
