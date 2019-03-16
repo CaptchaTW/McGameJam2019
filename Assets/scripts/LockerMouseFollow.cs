@@ -13,6 +13,7 @@ public class LockerMouseFollow : MonoBehaviour
     void Start()
     {
         posBounds = transform.position;
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
