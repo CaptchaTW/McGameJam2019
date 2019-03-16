@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Schoolyard.unity
+    guid: 20fa3c9daf35a524c9bebb63fb73a6e8
+  - enabled: 1
+    path: Assets/Scenes/Lockers.unity
+    guid: e8396ff608e56af40aedef0ec731d3b4
+  - enabled: 1
+    path: Assets/Scenes/BathroomDoor.unity
+    guid: 287b91a95ecfc2344b50bd5e0fb5bf8b
+  - enabled: 0
+    path: Assets/Scenes/HallwayEnd.unity
+    guid: 61d68adbc36573b4e898637a9cbc694c
   m_configObjects: {}
