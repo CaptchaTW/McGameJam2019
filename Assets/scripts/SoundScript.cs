@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class SoundScript : MonoBehaviour
 {
     public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps;
@@ -26,6 +28,7 @@ public class SoundScript : MonoBehaviour
         doorOpen = Resources.Load<AudioClip>("doorOpen");
         doorClose = Resources.Load<AudioClip>("doorClose");
         bgNoise = Resources.Load<AudioClip>("bgNoise");
+        audioSource = GetComponent<AudioSource>();
     }
 
     public static void PlaySound(string audioClip)
