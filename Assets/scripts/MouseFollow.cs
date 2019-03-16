@@ -5,9 +5,10 @@ using UnityEngine;
 public class MouseFollow : MonoBehaviour
     
 {
-    public float speed = 8f;
+    public float speed = 6f;
     public float leftBound;
     public float rightBound;
+    float mvmt;
     Vector3 posBounds;
 
     // Start is called before the first frame update
@@ -22,18 +23,38 @@ public class MouseFollow : MonoBehaviour
     {
         if (Input.mousePosition.x < Screen.width / 4 && transform.position.x > leftBound)
         {
+            mvmt = speed;
+             if ((Input.mousePosition.x < Screen.width / 6) )
+            {
+                mvmt = speed + 3;
+                
+                if ((Input.mousePosition.x < Screen.width / 8))
+                {
+                    mvmt = mvmt + 3;
+                }
+            }
 
-            Debug.Log(transform.position.x);
-
-            posBounds = new Vector3(posBounds.x - Time.deltaTime * speed, posBounds.y, transform.position.z);
+            // Debug.Log(transform.position.x);
+           
+            posBounds = new Vector3(posBounds.x - Time.deltaTime * mvmt, posBounds.y, transform.position.z);
            
         }
         else if (Input.mousePosition.x > (3 * Screen.width) / 4 && transform.position.x < rightBound)
         {
-            Debug.Log(transform.position.x);
-            //transform.position -= new Vector3(Time.deltaTime * speed, transform.position.y, transform.position.z);
+            mvmt = speed;
+            if ((Input.mousePosition.x > 5*Screen.width / 6))
+            {
+                mvmt = speed + 3;
 
-            posBounds = new Vector3(posBounds.x + Time.deltaTime * speed, posBounds.y, transform.position.z);
+                if ((Input.mousePosition.x > 7*Screen.width / 8))
+                {
+                    mvmt = mvmt + 3;
+                }
+            }
+           // Debug.Log(transform.position.x);
+            //transform.position -= new Vector3(Time.deltaTime * speed, transform.position.y, transform.position.z);
+            
+            posBounds = new Vector3(posBounds.x + Time.deltaTime * mvmt, posBounds.y, transform.position.z);
 
         }
         
