@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: HallwayStairs
-  x: 20
+  x: 37.6
 --- !u!65 &967368276
 BoxCollider:
   m_ObjectHideFlags: 0
