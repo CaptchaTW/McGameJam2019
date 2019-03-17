@@ -17,7 +17,7 @@ public class BasementRenovation : MonoBehaviour
     {
         if (GlobalVars.inventoryOfKeys[4])
         {
-            door.tag = "Unlocked";
+            GlobalVars.keyStatus[4] = true;
             SpriteR.enabled = false;
         }
     }
