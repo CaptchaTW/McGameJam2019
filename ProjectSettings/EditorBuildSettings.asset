@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StairsDown.unity
     guid: 76772de8c177d0140ab9bfbb75a2be3c
   - enabled: 1
+    path: Assets/Scenes/StairsUp.unity
+    guid: 5a0352735d50f354a8cb912b11544d55
+  - enabled: 1
     path: Assets/Scenes/MusicRoom.unity
     guid: 5e88313554a56e0479289375ea6cb196
   - enabled: 1
