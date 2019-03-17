@@ -161,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a1: {fileID: 1468298250}
   a2: {fileID: 529337294}
-  SceneName: Lockers
+  SceneName: Classroom
   x: 0
   key: 0
   sound: 
