@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 1598777095}
   - component: {fileID: 1598777094}
   m_Layer: 0
-  m_Name: RestartGameButton
+  m_Name: GlobalControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
