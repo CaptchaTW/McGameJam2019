@@ -18,7 +18,7 @@ public class RestartGame : MonoBehaviour
     	if (Input.GetKeyDown(KeyCode.R))
     	{
     		Debug.Log("restart game");
-    		for (int x = 1; x < 5; x++) {
+    		for (int x = 1; x < 6; x++) {
     			GlobalVars.inventoryOfKeys[x] = false;
     			GlobalVars.keyStatus[x] = false;
     		}
