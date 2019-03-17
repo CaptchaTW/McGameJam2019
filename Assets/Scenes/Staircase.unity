@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 747728034}
   m_Layer: 0
   m_Name: Rooftop
-  m_TagString: Untagged
+  m_TagString: Locked
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
   a2: {fileID: 131074110}
   SceneName: Rooftop
   x: 50
-  key: 0
+  key: 2
   sound: steps
 --- !u!65 &747728030
 BoxCollider:
@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorLocked: {fileID: 0}
+  cursorLocked: {fileID: 2800000, guid: eeaac754d06e11d4aba09eb1228e08ef, type: 3}
   cursorUnlocked: {fileID: 2800000, guid: 586ce3cab7bde154c89733229caa8fb7, type: 3}
 --- !u!1 &1058543652
 GameObject:
