@@ -6,8 +6,7 @@ using UnityEngine;
 
 public class SoundScript : MonoBehaviour
 {
-    public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2, doorUnlock;
-    public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2;
+    public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2, doorUnlock, bellsound;
     public static AudioClip valve, unlockDoor, lockedDoor,doorOpen, doorClose, bgNoise, creepyvoice, creepylaugh, breakwindow, bookdrop;
     public static AudioClip note1, note2, note3, note4, note5, c, d, e, g, a, mirrorcrack, reallyspookyshimmer, collapsebricks;
 
@@ -44,6 +43,7 @@ public class SoundScript : MonoBehaviour
         doorUnlock = Resources.Load<AudioClip>("doorUnlock");
         lockedDoor = Resources.Load<AudioClip>("lockedDoor");
         unlockDoor = Resources.Load<AudioClip>("unlockDoor");
+        bellsound = Resources.Load<AudioClip>("bellsound");
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -127,7 +127,10 @@ public class SoundScript : MonoBehaviour
             case "unlockDoor":
                 audioSource.PlayOneShot(unlockDoor);
                 break;
-                
+            case "bellsound":
+                audioSource.PlayOneShot(bellsound);
+                break;
+
         }
     }
 }
