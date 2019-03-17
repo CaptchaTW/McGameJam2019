@@ -546,7 +546,6 @@ GameObject:
   - component: {fileID: 2098287851}
   - component: {fileID: 2098287850}
   - component: {fileID: 2098287852}
-
   m_Layer: 0
   m_Name: scene_roof2
   m_TagString: Untagged
@@ -554,10 +553,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-
 --- !u!212 &2098287850
 SpriteRenderer:
-
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}

@@ -40,7 +40,7 @@ public class SceneChanger : MonoBehaviour
         a1.gameObject.SetActive(false);
         a2.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(2.0f);
         Debug.Log("waited");
         wait = false;
         SceneManager.LoadScene(SceneName);
@@ -51,20 +51,34 @@ public class SceneChanger : MonoBehaviour
         // if i have the key but didnt use it
         if (GlobalVars.inventoryOfKeys[key] && !GlobalVars.keyStatus[key])
         {
+            SoundScript.PlaySound("unlockDoor");
             GlobalVars.keyStatus[key] = true;
             Debug.Log("Unlocked with key" + key);
+           
         }
         else if (!GlobalVars.inventoryOfKeys[key]){
             Debug.Log("Locked");
+            SoundScript.PlaySound("lockedDoor");
         }
 
         else
         {
-            if (sound == "door")
+            if (sound == "open")
 
             {
-                SoundScript.PlaySound("doorOpen");
+                SoundScript.PlaySound("doorcreak");
                 Debug.Log("door opened");
+
+                if (!wait)
+                {
+                    StartCoroutine(Pause());
+                }
+            }
+            else if (sound == "close")
+
+            {
+                SoundScript.PlaySound("doorClose");
+                Debug.Log("door closed");
 
                 if (!wait)
                 {
