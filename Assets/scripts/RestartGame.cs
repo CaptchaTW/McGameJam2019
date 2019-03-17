@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class RestartGame : MonoBehaviour
 {
+    public GameObject toDestroy;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,9 @@ public class RestartGame : MonoBehaviour
     			GlobalVars.keyStatus[x] = false;
     		}
     		SceneManager.LoadScene("Main");
-    	}
+
+            Destroy(gameObject);
+        }
         
     }
 }
