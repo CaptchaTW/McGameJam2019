@@ -8,7 +8,7 @@ public class SoundScript : MonoBehaviour
 {
     public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2;
     public static AudioClip valve, doorOpen, doorClose, bgNoise, creepyvoice, creepylaugh, breakwindow, bookdrop;
-    public static AudioClip note1, note2, note3, note4;
+    public static AudioClip note1, note2, note3, note4, note5, c, d, e, g, a;
 
     public static string[] clips = { "doorcreak", "floorcreak", "footsteps", "footsteps2", "creepyvoice", "creepylaugh", "breakwindow", "bookdrop" };
 
@@ -22,6 +22,7 @@ public class SoundScript : MonoBehaviour
         note2 = Resources.Load<AudioClip>("note2");
         note3 = Resources.Load<AudioClip>("note3");
         note4 = Resources.Load<AudioClip>("note4");
+        note5 = Resources.Load<AudioClip>("note5");
         doorcreak = Resources.Load<AudioClip>("doorcreak");
         floorcreak = Resources.Load<AudioClip>("floorcreak");
         wind = Resources.Load<AudioClip>("wind");
@@ -60,6 +61,9 @@ public class SoundScript : MonoBehaviour
                 break;
             case "note4":
                 audioSource.PlayOneShot(note4);
+                break;
+            case "note5":
+                audioSource.PlayOneShot(note5);
                 break;
             case "doorcreak":
                 audioSource.PlayOneShot(doorcreak);

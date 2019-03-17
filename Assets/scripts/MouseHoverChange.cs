@@ -8,6 +8,7 @@ public class MouseHoverChange : MonoBehaviour
     Texture2D cursorLocked;
     [SerializeField]
     Texture2D cursorUnlocked;
+    public int key;
     Vector2 mousePosition;
     Vector2 center = new Vector2(16, 16);
 
@@ -18,7 +19,7 @@ public class MouseHoverChange : MonoBehaviour
 
     void OnMouseEnter()
     {
-        if (gameObject.tag == "Locked")
+        if (!GlobalVars.keyStatus[key])
         {
             Debug.Log("hover locked");
             Cursor.SetCursor(cursorLocked, center, CursorMode.Auto);
