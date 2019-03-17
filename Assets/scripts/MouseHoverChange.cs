@@ -9,6 +9,7 @@ public class MouseHoverChange : MonoBehaviour
     [SerializeField]
     Texture2D cursorUnlocked;
     Vector2 mousePosition;
+    Vector2 center = new Vector2(16, 16);
 
     void Start()
     {
@@ -20,12 +21,12 @@ public class MouseHoverChange : MonoBehaviour
         if (gameObject.tag == "Locked")
         {
             Debug.Log("hover locked");
-            Cursor.SetCursor(cursorLocked, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(cursorLocked, center, CursorMode.Auto);
         }
         else
         {
             Debug.Log("hover unlocked");
-            Cursor.SetCursor(cursorUnlocked, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(cursorUnlocked, center, CursorMode.Auto);
         }
     }
 

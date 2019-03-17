@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class KeyClick: MonoBehaviour
 {
+    [SerializeField]
+    Vector2 mousePosition;
     public int keyNumber;
     // public GameObject Key;
     // public int keyAnimation = 0;
@@ -23,6 +25,7 @@ public class KeyClick: MonoBehaviour
     void OnMouseDown()
     {   
         GlobalVars.inventoryOfKeys[keyNumber] = true ;
+        Cursor.SetCursor(null, mousePosition, CursorMode.Auto);
         gameObject.SetActive(false);
         Debug.Log("key " + keyNumber + " got");
         // if (keyAnimation == 1) {
