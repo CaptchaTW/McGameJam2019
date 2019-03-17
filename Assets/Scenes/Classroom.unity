@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a1: {fileID: 0}
-  a2: {fileID: 0}
+  a1: {fileID: 780747928}
+  a2: {fileID: 1558453352}
   SceneName: ShelfInside
   x: 0
   key: 0
