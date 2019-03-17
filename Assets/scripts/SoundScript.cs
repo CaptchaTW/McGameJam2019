@@ -6,9 +6,11 @@ using UnityEngine;
 
 public class SoundScript : MonoBehaviour
 {
-    public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps;
-    public static AudioClip valve, doorOpen, doorClose, bgNoise;
+    public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2;
+    public static AudioClip valve, doorOpen, doorClose, bgNoise, creepyvoice, creepylaugh, breakwindow, bookdrop;
     public static AudioClip note1, note2, note3, note4;
+
+    public static string[] clips = { "doorcreak", "floorcreak", "footsteps", "footsteps2", "creepyvoice", "creepylaugh", "breakwindow", "bookdrop" };
 
     static AudioSource audioSource;
 
@@ -28,6 +30,12 @@ public class SoundScript : MonoBehaviour
         doorOpen = Resources.Load<AudioClip>("doorOpen");
         doorClose = Resources.Load<AudioClip>("doorClose");
         bgNoise = Resources.Load<AudioClip>("bgNoise");
+        creepyvoice = Resources.Load<AudioClip>("creepyvoice");
+        creepylaugh = Resources.Load<AudioClip>("creepylaugh");
+        footsteps2 = Resources.Load<AudioClip>("footsteps2");
+        breakwindow = Resources.Load<AudioClip>("breakwindow");
+        bookdrop = Resources.Load<AudioClip>("bookdrop");
+
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -74,6 +82,23 @@ public class SoundScript : MonoBehaviour
             case "doorClose":
                 audioSource.PlayOneShot(doorClose);
                 break;
+            case "creepyvoice":
+                audioSource.PlayOneShot(creepyvoice);
+                break;
+            case "creepylaugh":
+                audioSource.PlayOneShot(creepylaugh);
+                break;
+            case "footsteps2":
+                audioSource.PlayOneShot(footsteps2);
+                break;
+            case "breakwindow":
+                audioSource.PlayOneShot(breakwindow);
+                break;
+            case "bookdrop":
+                audioSource.PlayOneShot(bookdrop);
+                break;
+
+
         }
     }
 }

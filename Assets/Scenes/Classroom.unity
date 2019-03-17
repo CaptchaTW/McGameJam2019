@@ -124,9 +124,10 @@ GameObject:
   - component: {fileID: 406375056}
   - component: {fileID: 406375055}
   - component: {fileID: 406375054}
+  - component: {fileID: 406375058}
   - component: {fileID: 406375053}
   m_Layer: 0
-  m_Name: ClassroomKey
+  m_Name: ShelfInside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141,11 +142,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 406375052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4461ba06cacaf4a8c6c4df54e9418f, type: 3}
+  m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyNumber: 3
-  Key: {fileID: 406375052}
+  a1: {fileID: 780747928}
+  a2: {fileID: 1558453352}
+  SceneName: ShelfInside
+  x: 0
+  key: 0
+  sound: 
 --- !u!65 &406375054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -212,12 +217,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406375052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.277, y: 1.651, z: -8.65}
-  m_LocalScale: {x: 0.67637396, y: 0.54209995, z: 1}
+  m_LocalPosition: {x: -3.865, y: -3.505, z: -8.65}
+  m_LocalScale: {x: 2.3071115, y: 2.2117677, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406375058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406375052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 76ea7e2e769c5984b86ae1433f70cd5f, type: 3}
 --- !u!1 &587213390
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +250,7 @@ GameObject:
   - component: {fileID: 587213393}
   - component: {fileID: 587213392}
   - component: {fileID: 587213391}
+  - component: {fileID: 587213396}
   m_Layer: 0
   m_Name: HallwayStairs
   m_TagString: Untagged
@@ -251,10 +271,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a1: {fileID: 780747928}
-  a2: {fileID: 1738356600}
+  a2: {fileID: 1558453352}
   SceneName: HallwayStairs
   x: 33
   key: 0
+  sound: door
 --- !u!65 &587213392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -327,6 +348,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &587213396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587213390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: c68a80017d3583643b738fdb85f2c648, type: 3}
 --- !u!1 &780747926
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +376,9 @@ GameObject:
   - component: {fileID: 780747930}
   - component: {fileID: 780747932}
   - component: {fileID: 780747931}
+  - component: {fileID: 780747934}
+  - component: {fileID: 780747933}
+  - component: {fileID: 780747935}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -406,7 +444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780747926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.791672, y: 0.0003832872, z: -9.828844}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -535,6 +573,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4169a47335171b34eb69920e71271918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &780747933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780747926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3309686a9fbbe6e42a182d5e0257704c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensity: 0.5
+  threshold: 0
+  blurSpread: 1
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  contrastCompositeShader: {fileID: 4800000, guid: 273404942eede4ea1883ca1fb2942507,
+    type: 3}
+--- !u!114 &780747934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780747926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9191284b058eef549b7108b5f04e1117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensityMultiplier: 3
+  generalIntensity: 0.5
+  blackIntensity: 1
+  whiteIntensity: 1
+  midGrey: 0.2
+  dx11Grain: 0
+  softness: 0
+  monochrome: 0
+  intensities: {x: 1, y: 1, z: 1}
+  tiling: {x: 64, y: 64, z: 64}
+  monochromeTiling: 64
+  filterMode: 1
+  noiseTexture: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
+  noiseShader: {fileID: 4800000, guid: b0249d8c935344451aa4de6db76f0688, type: 3}
+  dx11NoiseShader: {fileID: 4800000, guid: 8b30686bb4322ab42ad5eb50a0210b58, type: 3}
+--- !u!114 &780747935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780747926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88a26a276b4e47619ce2c5adad33fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monochrome: 1
+  grainIntensityMin: 0.11
+  grainIntensityMax: 0.59
+  grainSize: 2
+  scratchIntensityMin: 0
+  scratchIntensityMax: 0.51
+  scratchFPS: 10
+  scratchJitter: 0.01
+  grainTexture: {fileID: 2800000, guid: ffa9c02760c2b4e8eb9814ec06c4b05b, type: 3}
+  scratchTexture: {fileID: 2800000, guid: 6205c27cc031f4e66b8ea90d1bfaa158, type: 3}
+  shaderRGB: {fileID: 4800000, guid: 5d7f4c401ae8946bcb0d6ff68a9e7466, type: 3}
+  shaderYUV: {fileID: 4800000, guid: 0e447868506ba49f0a73235b8a8b647a, type: 3}
 --- !u!1 &934561032
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +721,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1738356598
+--- !u!1 &1558453350
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -622,31 +729,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1738356601}
-  - component: {fileID: 1738356600}
-  - component: {fileID: 1738356599}
+  - component: {fileID: 1558453353}
+  - component: {fileID: 1558453352}
+  - component: {fileID: 1558453351}
   m_Layer: 0
-  m_Name: Camera (5)
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1738356599
+  m_IsActive: 0
+--- !u!81 &1558453351
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738356598}
+  m_GameObject: {fileID: 1558453350}
   m_Enabled: 1
---- !u!20 &1738356600
+--- !u!20 &1558453352
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738356598}
+  m_GameObject: {fileID: 1558453350}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
@@ -682,15 +789,15 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &1738356601
+--- !u!4 &1558453353
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738356598}
+  m_GameObject: {fileID: 1558453350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -2.039894, y: 0.5671782, z: -9.868509}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

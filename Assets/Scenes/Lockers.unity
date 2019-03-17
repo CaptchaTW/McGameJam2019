@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 70153121}
   - component: {fileID: 70153123}
   - component: {fileID: 70153122}
+  - component: {fileID: 70153124}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -191,7 +192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70153117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.282888, y: -0.0047245678, z: -10.075074}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -320,6 +321,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4169a47335171b34eb69920e71271918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &70153124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70153117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88a26a276b4e47619ce2c5adad33fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monochrome: 1
+  grainIntensityMin: 0.11
+  grainIntensityMax: 0.59
+  grainSize: 2
+  scratchIntensityMin: 0
+  scratchIntensityMax: 0.51
+  scratchFPS: 10
+  scratchJitter: 0.01
+  grainTexture: {fileID: 2800000, guid: ffa9c02760c2b4e8eb9814ec06c4b05b, type: 3}
+  scratchTexture: {fileID: 2800000, guid: 6205c27cc031f4e66b8ea90d1bfaa158, type: 3}
+  shaderRGB: {fileID: 4800000, guid: 5d7f4c401ae8946bcb0d6ff68a9e7466, type: 3}
+  shaderYUV: {fileID: 4800000, guid: 0e447868506ba49f0a73235b8a8b647a, type: 3}
 --- !u!1 &507898046
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,6 +358,7 @@ GameObject:
   - component: {fileID: 507898049}
   - component: {fileID: 507898048}
   - component: {fileID: 507898047}
+  - component: {fileID: 507898052}
   m_Layer: 0
   m_Name: Schoolyard
   m_TagString: Untagged
@@ -353,10 +379,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a1: {fileID: 70153119}
-  a2: {fileID: 1738356600}
+  a2: {fileID: 1561938310}
   SceneName: Schoolyard
   x: 0
   key: 0
+  sound: 
 --- !u!65 &507898048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -429,6 +456,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507898052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507898046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 9dda300aa192c7541a6294b86d705a9e, type: 3}
 --- !u!1 &852247464
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,9 +482,10 @@ GameObject:
   - component: {fileID: 852247467}
   - component: {fileID: 852247466}
   - component: {fileID: 852247465}
+  - component: {fileID: 852247470}
   - component: {fileID: 852247469}
   m_Layer: 0
-  m_Name: ShoeKey
+  m_Name: LockerInside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -515,7 +557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852247464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.411, y: 3.24, z: -8.65}
+  m_LocalPosition: {x: 0.08, y: 3.23, z: -8.65}
   m_LocalScale: {x: 1.222, y: 1.15851, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -530,11 +572,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 852247464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4461ba06cacaf4a8c6c4df54e9418f, type: 3}
+  m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyNumber: 1
-  Key: {fileID: 852247464}
+  a1: {fileID: 70153119}
+  a2: {fileID: 1561938310}
+  SceneName: LockerInside
+  x: 0
+  key: 0
+  sound: 
+--- !u!114 &852247470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852247464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 76ea7e2e769c5984b86ae1433f70cd5f, type: 3}
 --- !u!1 &997802874
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +608,7 @@ GameObject:
   - component: {fileID: 997802877}
   - component: {fileID: 997802876}
   - component: {fileID: 997802875}
+  - component: {fileID: 997802880}
   m_Layer: 0
   m_Name: BathroomDoor
   m_TagString: Untagged
@@ -568,10 +629,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a1: {fileID: 70153119}
-  a2: {fileID: 1738356600}
+  a2: {fileID: 1561938310}
   SceneName: BathroomDoor
   x: 0
   key: 0
+  sound: 
 --- !u!65 &997802876
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -644,7 +706,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1738356598
+--- !u!114 &997802880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997802874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: c68a80017d3583643b738fdb85f2c648, type: 3}
+--- !u!1 &1561938308
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -652,31 +728,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1738356601}
-  - component: {fileID: 1738356600}
-  - component: {fileID: 1738356599}
+  - component: {fileID: 1561938311}
+  - component: {fileID: 1561938310}
+  - component: {fileID: 1561938309}
   m_Layer: 0
-  m_Name: Camera (8)
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1738356599
+  m_IsActive: 0
+--- !u!81 &1561938309
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738356598}
+  m_GameObject: {fileID: 1561938308}
   m_Enabled: 1
---- !u!20 &1738356600
+--- !u!20 &1561938310
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738356598}
+  m_GameObject: {fileID: 1561938308}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
@@ -712,15 +788,15 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &1738356601
+--- !u!4 &1561938311
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738356598}
+  m_GameObject: {fileID: 1561938308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -2.039894, y: 0.5671782, z: -9.868509}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -799,7 +875,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910233554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.12, y: -0.08, z: 0}
+  m_LocalPosition: {x: 10.82, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

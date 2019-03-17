@@ -18,7 +18,7 @@ public class SequenceClick : MonoBehaviour
     }
     void OnMouseDown()
     {
-        Debug.Log("clicked");
+        //Debug.Log("clicked");
 
         if (SequenceFollowCheck.playerSequence.Count == SequenceFollowCheck.CountMax)
         {
@@ -36,5 +36,7 @@ public class SequenceClick : MonoBehaviour
             }
             //  }
         }
+
+        // Debug.Log(SequenceNumber);
     }
 }

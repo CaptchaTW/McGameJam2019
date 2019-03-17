@@ -26,16 +26,17 @@ public class SequenceFollowCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(CheckSequence());
+        CheckSequence();
     }
     bool CheckSequence()
     {
-        Debug.Log(playerSequence.ToArray()[0]);
-        Debug.Log(correctPattern.ToArray()[0]);
+        // Debug.Log(playerSequence.ToArray()[0]);
+        // Debug.Log(correctPattern.ToArray()[0]);
         
         if (playerSequence.ToArray()[0] == correctPattern.ToArray()[0] && playerSequence.ToArray()[1] == correctPattern.ToArray()[1] &&playerSequence.ToArray()[2] == correctPattern.ToArray()[2] && playerSequence.ToArray()[3] == correctPattern.ToArray()[3])
         {
             GlobalVars.inventoryOfKeys[keyNumber] = true;
+            GlobalVars.keyStatus[keyNumber] = true;
             Debug.Log("Key " + keyNumber + " got");
             return true;
         }
