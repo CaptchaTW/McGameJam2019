@@ -204,6 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 416047477}
   - component: {fileID: 416047476}
+  - component: {fileID: 416047478}
   m_Layer: 0
   m_Name: scene_basement
   m_TagString: Untagged
@@ -273,6 +274,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416047478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416047475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69e5bbca5711ac44fb19f28a8536a7d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ogSprite: {fileID: 21300000, guid: 5f0e5a4ba4e67bf41a856d83de669306, type: 3}
+  newSprite: {fileID: 21300000, guid: 4f851f9e68cdf8b48aec58169fc242f2, type: 3}
+  newSprite2: {fileID: 21300000, guid: 98e1b6fde9ebb454abbfa7b6341d05ee, type: 3}
+  newSprite3: {fileID: 21300000, guid: e58e580ae4aeca944afb278b933aae9d, type: 3}
+  newSprite4: {fileID: 21300000, guid: 749763ea863aaca44bd0c24db5d72c54, type: 3}
 --- !u!1 &863997710
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +307,6 @@ GameObject:
   - component: {fileID: 863997715}
   - component: {fileID: 863997717}
   - component: {fileID: 863997718}
-  - component: {fileID: 863997719}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -522,21 +539,6 @@ MonoBehaviour:
   scratchTexture: {fileID: 2800000, guid: 6205c27cc031f4e66b8ea90d1bfaa158, type: 3}
   shaderRGB: {fileID: 4800000, guid: 5d7f4c401ae8946bcb0d6ff68a9e7466, type: 3}
   shaderYUV: {fileID: 4800000, guid: 0e447868506ba49f0a73235b8a8b647a, type: 3}
---- !u!114 &863997719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863997710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4739c22ef73ad62488fe344c8fe9addd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  strengthX: 0
-  strengthY: 0
-  fishEyeShader: {fileID: 4800000, guid: 874ceab4425f64bccb1d14032f4452b1, type: 3}
 --- !u!1 &1604626486
 GameObject:
   m_ObjectHideFlags: 0

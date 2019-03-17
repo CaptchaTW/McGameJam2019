@@ -8,6 +8,7 @@ public static class GlobalVars
  
     public static bool[] inventoryOfKeys = {true, false, false, false, false};
     public static bool[] keyStatus = {true, false, false, false, false};
+    public static float currentCameraX = 0;
 
   //   void Start(){
   //   	for (int x = 0; x < 5; x++){

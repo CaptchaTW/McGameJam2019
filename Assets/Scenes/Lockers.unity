@@ -482,10 +482,10 @@ GameObject:
   - component: {fileID: 852247467}
   - component: {fileID: 852247466}
   - component: {fileID: 852247465}
-  - component: {fileID: 852247469}
   - component: {fileID: 852247470}
+  - component: {fileID: 852247469}
   m_Layer: 0
-  m_Name: ShoeKey
+  m_Name: LockerInside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,11 +572,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 852247464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4461ba06cacaf4a8c6c4df54e9418f, type: 3}
+  m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mousePosition: {x: 0, y: 0}
-  keyNumber: 1
+  a1: {fileID: 0}
+  a2: {fileID: 0}
+  SceneName: LockerInside
+  x: 0
+  key: 0
+  sound: 
 --- !u!114 &852247470
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -821,6 +821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983813581}
   - component: {fileID: 1983813580}
+  - component: {fileID: 1983813582}
   m_Layer: 0
   m_Name: scene_bathroom
   m_TagString: Untagged
@@ -890,3 +891,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1983813582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983813579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509df4df15e9c5649a44fc23103496fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ogSprite: {fileID: 21300000, guid: 932c4750d22fed64fb2cfed81fa1fb43, type: 3}
+  newSprite: {fileID: 21300000, guid: 6bcc3bede51a7e1479d89839138cd1e0, type: 3}
+  newSprite2: {fileID: 21300000, guid: 8248bfa670c098349b0925f1878e4a3b, type: 3}
+  newSprite3: {fileID: 21300000, guid: 82b8ce7bb876d15498e9c5ac790f8b96, type: 3}
+  newSprite4: {fileID: 21300000, guid: 93b2c1857a0564b4f965fa854f8ba2e9, type: 3}
+  newSprite5: {fileID: 21300000, guid: 0853fce8e7cd4f646b5174a729df17b1, type: 3}

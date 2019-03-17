@@ -124,10 +124,10 @@ GameObject:
   - component: {fileID: 406375056}
   - component: {fileID: 406375055}
   - component: {fileID: 406375054}
-  - component: {fileID: 406375053}
   - component: {fileID: 406375058}
+  - component: {fileID: 406375053}
   m_Layer: 0
-  m_Name: ClassroomKey
+  m_Name: ShelfInside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,11 +142,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 406375052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4461ba06cacaf4a8c6c4df54e9418f, type: 3}
+  m_Script: {fileID: 11500000, guid: 996be9b395b00a04294e987ea445698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mousePosition: {x: 0, y: 0}
-  keyNumber: 3
+  a1: {fileID: 0}
+  a2: {fileID: 0}
+  SceneName: ShelfInside
+  x: 0
+  key: 0
+  sound: 
 --- !u!65 &406375054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -213,8 +217,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406375052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.277, y: 1.651, z: -8.65}
-  m_LocalScale: {x: 0.67637396, y: 0.54209995, z: 1}
+  m_LocalPosition: {x: -3.865, y: -3.505, z: -8.65}
+  m_LocalScale: {x: 2.3071115, y: 2.2117677, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
