@@ -8,6 +8,7 @@ public class AnimatedMirror : MonoBehaviour
     public Sprite ogSprite;
     public Sprite newSprite;
     public Sprite newSprite2;
+    public Sprite newSprite3;
     private SpriteRenderer sr;
     private float timer;
     private int blinktime = 0;
@@ -34,7 +35,7 @@ public class AnimatedMirror : MonoBehaviour
             }
         }
 
-        if (timer > 0.05 && blinktime == 1) 
+        if (timer > 0.1 && blinktime == 1) 
         {
 
             sr.sprite = newSprite2;
@@ -42,14 +43,22 @@ public class AnimatedMirror : MonoBehaviour
             blinktime = 2;
         }
 
-        if (timer > 0.05 && blinktime == 2) 
+        if (timer > 0.1 && blinktime == 2)
+        {
+
+            sr.sprite = newSprite3;
+            timer = 0;
+            blinktime = 3;
+        }
+
+            if (timer > 0.05 && blinktime == 3) 
         {
 
             sr.sprite = newSprite;
             timer = 0;
-            blinktime = 3;
+            blinktime = 4;
         }
-        if (timer > 0.05 && blinktime == 3) 
+        if (timer > 0.05 && blinktime == 4) 
         {
 
             sr.sprite = ogSprite;
