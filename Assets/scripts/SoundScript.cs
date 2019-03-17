@@ -106,7 +106,7 @@ public class SoundScript : MonoBehaviour
             case "lockedDoor":
                 audioSource.PlayOneShot(lockedDoor);
                 break;
-            case " unlockDoor":
+            case "unlockDoor":
                 audioSource.PlayOneShot(unlockDoor);
                 break;
                 
