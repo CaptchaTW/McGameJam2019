@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Locked
   - Unlocked
+  - Sound
   layers:
   - Default
   - TransparentFX
