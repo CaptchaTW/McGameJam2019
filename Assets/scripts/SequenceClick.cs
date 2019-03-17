@@ -5,20 +5,35 @@ using UnityEngine;
 public class SequenceClick : MonoBehaviour
 {
     public int SequenceNumber;
+   float timer = 0;
+   bool playSound;
+   bool playedSound;
+
+
     // Start is called before the first frame update
     void Start()
     {
-
+        playSound= false;
+        playedSound = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (playSound && !playedSound){
+            timer += Time.deltaTime;
+            if (timer > 1.5){
+                SoundScript.PlaySound("doorUnlock");
+                playedSound = true;
+            }
+        }
     }
+
     void OnMouseDown()
     {
         //Debug.Log("clicked");
+
+        
 
         if (SequenceFollowCheck.playerSequence.Count == SequenceFollowCheck.CountMax)
         {
@@ -39,7 +54,9 @@ public class SequenceClick : MonoBehaviour
             //  }
         }
 
-        // Debug.Log(SequenceNumber);
+        if(SequenceFollowCheck.CheckSequence()){
+            playSound = true;
+        }
     }
 
     public static void PlayPiano(int SequenceNumber)

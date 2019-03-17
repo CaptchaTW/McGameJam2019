@@ -28,7 +28,7 @@ public class MirrorCrack : MonoBehaviour
 
         if (timer > 3 && frame == 0)
         {
-
+            SoundScript.PlaySound("mirrorcrack");
             sr.sprite = newSprite;
             timer = 0;
             frame = 1;

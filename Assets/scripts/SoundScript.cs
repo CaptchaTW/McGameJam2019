@@ -6,9 +6,11 @@ using UnityEngine;
 
 public class SoundScript : MonoBehaviour
 {
+    public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2, doorUnlock;
     public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2;
-    public static AudioClip valve, pickingKey, unlockDoor, lockedDoor,doorOpen, doorClose, bgNoise, creepyvoice, creepylaugh, breakwindow, bookdrop;
-    public static AudioClip note1, note2, note3, note4, note5, c, d, e, g, a;
+    public static AudioClip valve, unlockDoor, lockedDoor,doorOpen, doorClose, bgNoise, creepyvoice, creepylaugh, breakwindow, bookdrop;
+    public static AudioClip note1, note2, note3, note4, note5, c, d, e, g, a, mirrorcrack, reallyspookyshimmer, collapsebricks;
+
 
     public static string[] clips = { "doorcreak", "floorcreak", "footsteps", "footsteps2", "creepyvoice", "creepylaugh", "breakwindow", "bookdrop" };
 
@@ -17,13 +19,16 @@ public class SoundScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mirrorcrack = Resources.Load<AudioClip>("mirrorcrack");
+        reallyspookyshimmer = Resources.Load<AudioClip>("reallyspookyshimmer");
+        collapsebricks = Resources.Load<AudioClip>("collapsebricks");
         schoolbell = Resources.Load<AudioClip>("schoolbell");
         note1 = Resources.Load<AudioClip>("note1");
         note2 = Resources.Load<AudioClip>("note2");
         note3 = Resources.Load<AudioClip>("note3");
         note4 = Resources.Load<AudioClip>("note4");
         note5 = Resources.Load<AudioClip>("note5");
-        doorcreak = Resources.Load<AudioClip>("doorcreak_new");
+        doorcreak = Resources.Load<AudioClip>("doorcreak");
         floorcreak = Resources.Load<AudioClip>("floorcreak");
         wind = Resources.Load<AudioClip>("wind");
         footsteps = Resources.Load<AudioClip>("footsteps");
@@ -36,9 +41,9 @@ public class SoundScript : MonoBehaviour
         footsteps2 = Resources.Load<AudioClip>("footsteps2");
         breakwindow = Resources.Load<AudioClip>("breakwindow");
         bookdrop = Resources.Load<AudioClip>("bookdrop");
+        doorUnlock = Resources.Load<AudioClip>("doorUnlock");
         lockedDoor = Resources.Load<AudioClip>("lockedDoor");
         unlockDoor = Resources.Load<AudioClip>("unlockDoor");
-        pickingKey = Resources.Load<AudioClip>("pickingKey");
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -47,6 +52,15 @@ public class SoundScript : MonoBehaviour
     {
         switch (audioClip)
         {
+            case "mirrorcrack":
+                audioSource.PlayOneShot(mirrorcrack);
+                break;
+            case "reallyspookyshimmer":
+                audioSource.PlayOneShot(reallyspookyshimmer);
+                break;
+            case "collapsebricks":
+                audioSource.PlayOneShot(collapsebricks);
+                break;
             case "bgNoise":
                 audioSource.PlayOneShot(bgNoise);
                 break;
@@ -104,16 +118,16 @@ public class SoundScript : MonoBehaviour
             case "bookdrop":
                 audioSource.PlayOneShot(bookdrop);
                 break;
+            case "doorUnlock":
+                audioSource.PlayOneShot(doorUnlock);
+                break;
             case "lockedDoor":
                 audioSource.PlayOneShot(lockedDoor);
                 break;
             case "unlockDoor":
                 audioSource.PlayOneShot(unlockDoor);
                 break;
-            case "pickingKey":
-                audioSource.PlayOneShot(pickingKey);
-                break;
-
+                
         }
     }
 }
