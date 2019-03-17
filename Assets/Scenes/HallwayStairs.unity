@@ -311,6 +311,7 @@ MonoBehaviour:
   SceneName: HallwayEnd
   x: 0
   key: 0
+  sound: 
 --- !u!65 &845856896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -435,6 +436,7 @@ MonoBehaviour:
   SceneName: BathroomDoor
   x: 10
   key: 0
+  sound: 
 --- !u!65 &1065085015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -559,6 +561,7 @@ MonoBehaviour:
   SceneName: Staircase
   x: 0
   key: 0
+  sound: door
 --- !u!65 &1145667691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -683,6 +686,7 @@ MonoBehaviour:
   SceneName: Library
   x: 6.8
   key: 3
+  sound: door
 --- !u!65 &1215962702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1015,6 +1019,7 @@ MonoBehaviour:
   SceneName: Classroom
   x: 21.5
   key: 0
+  sound: door
 --- !u!65 &1471302083
 BoxCollider:
   m_ObjectHideFlags: 0

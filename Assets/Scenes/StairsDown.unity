@@ -451,6 +451,7 @@ MonoBehaviour:
   SceneName: Basement
   x: 0
   key: 4
+  sound: door
 --- !u!65 &997729995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -736,6 +737,7 @@ MonoBehaviour:
   SceneName: Staircase
   x: 0
   key: 0
+  sound: steps
 --- !u!65 &2124543425
 BoxCollider:
   m_ObjectHideFlags: 0

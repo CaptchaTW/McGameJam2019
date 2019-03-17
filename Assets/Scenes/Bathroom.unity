@@ -232,6 +232,7 @@ MonoBehaviour:
   SceneName: BathroomDoor
   x: 1.348
   key: 0
+  sound: door
 --- !u!65 &731881694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -428,6 +429,7 @@ MonoBehaviour:
   SceneName: Mirror
   x: 0
   key: 0
+  sound: 
 --- !u!114 &1097696666
 MonoBehaviour:
   m_ObjectHideFlags: 0

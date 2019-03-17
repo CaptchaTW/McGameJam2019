@@ -11,6 +11,7 @@ public class SceneChanger : MonoBehaviour
     public string SceneName;
     public float x;
     public int key;
+    public string sound;    // type "door" or "steps"
     // Start is called before the first frame update
     void Start()
     {
@@ -59,15 +60,7 @@ public class SceneChanger : MonoBehaviour
 
         else
         {
-            if ((SceneName.Equals("MusicRoom") && !SceneManager.GetActiveScene().name.Equals("Piano"))|| 
-                SceneName.Equals("Classroom") ||
-                (SceneName.Equals("Staircase") && !SceneManager.GetActiveScene().name.Equals("StairsDown"))||
-                (SceneName.Equals("Library") && !SceneManager.GetActiveScene().name.Equals("RedBook")) || 
-                SceneName.Equals("Bathroom")|| 
-                (SceneName.Equals("HallwayStairs") && (SceneManager.GetActiveScene().name.Equals("MusicRoom") ||
-                SceneManager.GetActiveScene().name.Equals("Classroom") ||
-                SceneManager.GetActiveScene().name.Equals("Library") ||
-                SceneManager.GetActiveScene().name.Equals("Bathroom"))))
+            if (sound == "door")
 
             {
                 SoundScript.PlaySound("doorOpen");
@@ -78,7 +71,7 @@ public class SceneChanger : MonoBehaviour
                     StartCoroutine(Pause());
                 }
             }
-            else if (SceneName.Equals("Rooftop") || SceneName.Equals("StairsDown"))
+            else if (sound == "steps")
             {
                 SoundScript.PlaySound("footsteps");
                 Debug.Log("footsteps");

@@ -311,6 +311,7 @@ MonoBehaviour:
   SceneName: HallwayStairs
   x: 37.6
   key: 0
+  sound: door
 --- !u!65 &967368276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -656,6 +657,7 @@ MonoBehaviour:
   SceneName: RedBook
   x: 0
   key: 0
+  sound: 
 --- !u!65 &1730361332
 BoxCollider:
   m_ObjectHideFlags: 0
