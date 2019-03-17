@@ -22,7 +22,8 @@ public class KeyClick: MonoBehaviour
      
     }
     void OnMouseDown()
-    {   
+    {
+        SoundScript.PlaySound("pickingKey");
         GlobalVars.inventoryOfKeys[keyNumber] = true ;
         Cursor.SetCursor(null, mousePosition, CursorMode.Auto);
         gameObject.SetActive(false);
