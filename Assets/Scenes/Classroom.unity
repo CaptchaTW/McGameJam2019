@@ -270,6 +270,7 @@ MonoBehaviour:
   SceneName: HallwayStairs
   x: 33
   key: 0
+  sound: door
 --- !u!65 &587213392
 BoxCollider:
   m_ObjectHideFlags: 0

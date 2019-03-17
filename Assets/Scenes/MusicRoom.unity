@@ -311,6 +311,7 @@ MonoBehaviour:
   SceneName: HallwayEnd
   x: 27.34
   key: 0
+  sound: door
 --- !u!65 &557167851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -643,6 +644,7 @@ MonoBehaviour:
   SceneName: Piano
   x: 0
   key: 0
+  sound: 
 --- !u!65 &2072674132
 BoxCollider:
   m_ObjectHideFlags: 0

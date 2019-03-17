@@ -150,6 +150,7 @@ MonoBehaviour:
   SceneName: HallwayStairs
   x: 60
   key: 0
+  sound: 
 --- !u!65 &473317214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -564,6 +565,7 @@ MonoBehaviour:
   SceneName: MusicRoom
   x: 24.5
   key: 1
+  sound: door
 --- !u!65 &1347088060
 BoxCollider:
   m_ObjectHideFlags: 0

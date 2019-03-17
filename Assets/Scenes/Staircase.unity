@@ -232,6 +232,7 @@ MonoBehaviour:
   SceneName: Rooftop
   x: 50
   key: 0
+  sound: steps
 --- !u!65 &747728030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -564,6 +565,7 @@ MonoBehaviour:
   SceneName: HallwayStairs
   x: 13.34
   key: 0
+  sound: door
 --- !u!65 &1106965657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -688,6 +690,7 @@ MonoBehaviour:
   SceneName: StairsDown
   x: 0
   key: 0
+  sound: steps
 --- !u!65 &1195789267
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -311,6 +311,7 @@ MonoBehaviour:
   SceneName: Lockers
   x: 0
   key: 0
+  sound: door
 --- !u!65 &742968201
 BoxCollider:
   m_ObjectHideFlags: 0
