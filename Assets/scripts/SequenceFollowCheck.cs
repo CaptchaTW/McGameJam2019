@@ -10,6 +10,8 @@ public class SequenceFollowCheck : MonoBehaviour
     public static Queue<int> correctPattern = new Queue<int>();
    public static Queue<int> playerSequence = new Queue<int>();
 
+    bool wait = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class SequenceFollowCheck : MonoBehaviour
     {
         CheckSequence();
     }
+
     bool CheckSequence()
     {
         // Debug.Log(playerSequence.ToArray()[0]);
@@ -38,7 +41,18 @@ public class SequenceFollowCheck : MonoBehaviour
             GlobalVars.inventoryOfKeys[keyNumber] = true;
             GlobalVars.keyStatus[keyNumber] = true;
             Debug.Log("Key " + keyNumber + " got");
+
+            float time = 10.0f;
+
+            time -= Time.deltaTime;
+            SoundScript.PlaySound("doorOpen");
             return true;
+
+            //if (!wait)
+            //{
+              //  StartCoroutine(Pause());
+            //}
+            //return true;
         }
       
         else
