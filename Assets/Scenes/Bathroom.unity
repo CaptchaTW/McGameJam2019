@@ -232,7 +232,7 @@ MonoBehaviour:
   SceneName: BathroomDoor
   x: 1.348
   key: 0
-  sound: door
+  sound: open
 --- !u!65 &731881694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -723,7 +723,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4461ba06cacaf4a8c6c4df54e9418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mousePosition: {x: 0, y: 0}
   keyNumber: 4
 --- !u!65 &1475086145
 BoxCollider:

@@ -9,20 +9,21 @@ public static class GlobalVars
     public static bool[] inventoryOfKeys = {true, false, false, false, false};
     public static bool[] keyStatus = {true, false, false, false, false};
     public static float currentCameraX = 0;
+    public static bool dissapearingDoor = false;
 
-  //   void Start(){
-  //   	for (int x = 0; x < 5; x++){
-  //   	keyStatus[x] = false;
-	 //    }
-	 //    for (int x = 0; x < 5; x++){
-	 //    	inventoryOfKeys[x] = false;
-	 //    }
-	 //    inventoryOfKeys[0] = true;
-		// keyStatus[0] = true;
-  //   }
-    
-    
- 
+    //   void Start(){
+    //   	for (int x = 0; x < 5; x++){
+    //   	keyStatus[x] = false;
+    //    }
+    //    for (int x = 0; x < 5; x++){
+    //    	inventoryOfKeys[x] = false;
+    //    }
+    //    inventoryOfKeys[0] = true;
+    // keyStatus[0] = true;
+    //   }
+
+
+
 }
 
 

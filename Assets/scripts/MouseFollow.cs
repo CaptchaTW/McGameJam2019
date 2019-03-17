@@ -21,6 +21,8 @@ public class MouseFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        GlobalVars.currentCameraX = transform.position.x;
         if (Input.mousePosition.x < Screen.width / 4 && transform.position.x > leftBound +1)
         {
             mvmt = speed;
