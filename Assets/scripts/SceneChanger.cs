@@ -51,20 +51,34 @@ public class SceneChanger : MonoBehaviour
         // if i have the key but didnt use it
         if (GlobalVars.inventoryOfKeys[key] && !GlobalVars.keyStatus[key])
         {
+            SoundScript.PlaySound("unlockDoor");
             GlobalVars.keyStatus[key] = true;
             Debug.Log("Unlocked with key" + key);
+           
         }
         else if (!GlobalVars.inventoryOfKeys[key]){
             Debug.Log("Locked");
+            SoundScript.PlaySound("lockedDoor");
         }
 
         else
         {
-            if (sound == "door")
+            if (sound == "open")
 
             {
                 SoundScript.PlaySound("doorOpen");
                 Debug.Log("door opened");
+
+                if (!wait)
+                {
+                    StartCoroutine(Pause());
+                }
+            }
+            else if (sound == "close")
+
+            {
+                SoundScript.PlaySound("doorClose");
+                Debug.Log("door closed");
 
                 if (!wait)
                 {
