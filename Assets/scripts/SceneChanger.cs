@@ -14,7 +14,7 @@ public class SceneChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        a2.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
