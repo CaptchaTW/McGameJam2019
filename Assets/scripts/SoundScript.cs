@@ -7,7 +7,6 @@ using UnityEngine;
 public class SoundScript : MonoBehaviour
 {
     public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2, doorUnlock;
-    public static AudioClip schoolbell, doorcreak, floorcreak, wind, footsteps, footsteps2;
     public static AudioClip valve, pickingKey, unlockDoor, lockedDoor,doorOpen, doorClose, bgNoise, creepyvoice, creepylaugh, breakwindow, bookdrop;
     public static AudioClip note1, note2, note3, note4, note5;
 
