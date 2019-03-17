@@ -31,12 +31,13 @@ public class RandomSfxScript : MonoBehaviour
             SoundScript.PlaySound(SoundScript.clips[clipIndex]);
 
             yield return new WaitForSeconds(Random.Range(15f, 20f));
+            
 
-            Debug.Log("play schoolbell sound");
-            SoundScript.PlaySound("schoolbell");
+            Debug.Log("play bell sound");
+            SoundScript.PlaySound("bellsound");
+
+
             StartCoroutine(PlaySound());
         }
-        
-        
     }
 }
