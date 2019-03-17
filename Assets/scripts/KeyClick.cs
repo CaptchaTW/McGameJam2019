@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class KeyClick: MonoBehaviour
 {
-    [SerializeField]
     Vector2 mousePosition;
     public int keyNumber;
     // public GameObject Key;
