@@ -21,6 +21,11 @@ public class DoorDissapear : MonoBehaviour
         Cursor.SetCursor(cursorLocked, center, CursorMode.Auto);
     }
 
+    private void OnMouseDown()
+    {
+        SoundScript.PlaySound("lockedDoor");
+    }
+
     void Update()
     {
         if (GlobalVars.dissapearingDoor)
