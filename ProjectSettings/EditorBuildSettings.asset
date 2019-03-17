@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShelfInside.unity
     guid: 6eac729bc1b01204cad8a7199d12dc4c
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 40cb4e0640d9cb8409aaab4d807ea688
   m_configObjects: {}
