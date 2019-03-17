@@ -29,7 +29,7 @@ public class AnimatedValve : MonoBehaviour
             timer += Time.deltaTime;
         }
 
-        if (timer > 0.1 && frame == 0) // change after 3 seconds
+        if (timer > 0.1 && frame == 0) 
         {
 
             sr.sprite = newSprite;
