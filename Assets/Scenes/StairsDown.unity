@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 997729996}
   - component: {fileID: 997729995}
   - component: {fileID: 997729994}
+  - component: {fileID: 997729999}
   m_Layer: 0
   m_Name: Basement
   m_TagString: Locked
@@ -522,6 +523,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &997729999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997729993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 2800000, guid: eeaac754d06e11d4aba09eb1228e08ef, type: 3}
+  cursorUnlocked: {fileID: 2800000, guid: 586ce3cab7bde154c89733229caa8fb7, type: 3}
 --- !u!1 &1359669914
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +711,7 @@ GameObject:
   - component: {fileID: 2124543426}
   - component: {fileID: 2124543425}
   - component: {fileID: 2124543424}
+  - component: {fileID: 2124543429}
   m_Layer: 0
   m_Name: Staircase
   m_TagString: Untagged
@@ -786,9 +802,23 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124543423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: -4.33, z: -8.65}
-  m_LocalScale: {x: 20.240408, y: 2.025, z: 1}
+  m_LocalPosition: {x: 0.19, y: -3.965, z: -8.65}
+  m_LocalScale: {x: 20.240408, y: 2.756025, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2124543429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124543423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: a67c9c5561279044780f9242cffd5b6e, type: 3}

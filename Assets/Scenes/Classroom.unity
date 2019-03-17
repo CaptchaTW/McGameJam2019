@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 406375055}
   - component: {fileID: 406375054}
   - component: {fileID: 406375053}
+  - component: {fileID: 406375058}
   m_Layer: 0
   m_Name: ClassroomKey
   m_TagString: Untagged
@@ -217,6 +218,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406375058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406375052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 76ea7e2e769c5984b86ae1433f70cd5f, type: 3}
 --- !u!1 &587213390
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +245,7 @@ GameObject:
   - component: {fileID: 587213393}
   - component: {fileID: 587213392}
   - component: {fileID: 587213391}
+  - component: {fileID: 587213396}
   m_Layer: 0
   m_Name: HallwayStairs
   m_TagString: Untagged
@@ -326,6 +342,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &587213396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587213390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: c68a80017d3583643b738fdb85f2c648, type: 3}
 --- !u!1 &780747926
 GameObject:
   m_ObjectHideFlags: 0

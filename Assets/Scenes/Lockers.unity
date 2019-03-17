@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 507898049}
   - component: {fileID: 507898048}
   - component: {fileID: 507898047}
+  - component: {fileID: 507898052}
   m_Layer: 0
   m_Name: Schoolyard
   m_TagString: Untagged
@@ -429,6 +430,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507898052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507898046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 9dda300aa192c7541a6294b86d705a9e, type: 3}
 --- !u!1 &852247464
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +457,7 @@ GameObject:
   - component: {fileID: 852247466}
   - component: {fileID: 852247465}
   - component: {fileID: 852247469}
+  - component: {fileID: 852247470}
   m_Layer: 0
   m_Name: ShoeKey
   m_TagString: Untagged
@@ -515,7 +531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852247464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.411, y: 3.24, z: -8.65}
+  m_LocalPosition: {x: 0.08, y: 3.23, z: -8.65}
   m_LocalScale: {x: 1.222, y: 1.15851, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -534,6 +550,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyNumber: 1
+--- !u!114 &852247470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852247464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 76ea7e2e769c5984b86ae1433f70cd5f, type: 3}
 --- !u!1 &997802874
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +577,7 @@ GameObject:
   - component: {fileID: 997802877}
   - component: {fileID: 997802876}
   - component: {fileID: 997802875}
+  - component: {fileID: 997802880}
   m_Layer: 0
   m_Name: BathroomDoor
   m_TagString: Untagged
@@ -643,6 +674,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &997802880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997802874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: c68a80017d3583643b738fdb85f2c648, type: 3}
 --- !u!1 &1561938308
 GameObject:
   m_ObjectHideFlags: 0

@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 742968202}
   - component: {fileID: 742968201}
   - component: {fileID: 742968200}
+  - component: {fileID: 742968205}
   m_Layer: 0
   m_Name: Lockers
   m_TagString: Untagged
@@ -376,12 +377,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742968199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27, y: 1.02, z: -0.039544016}
+  m_LocalPosition: {x: -0.03, y: 1.41, z: -0.039544016}
   m_LocalScale: {x: 1.997918, y: 1.4745626, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &742968205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742968199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 586ce3cab7bde154c89733229caa8fb7, type: 3}
 --- !u!1 &1127429805
 GameObject:
   m_ObjectHideFlags: 0
