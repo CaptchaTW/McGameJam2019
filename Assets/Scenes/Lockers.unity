@@ -370,7 +370,7 @@ MonoBehaviour:
   SceneName: Schoolyard
   x: 0
   key: 0
-  sound: 
+  sound: door
 --- !u!65 &507898048
 BoxCollider:
   m_ObjectHideFlags: 0

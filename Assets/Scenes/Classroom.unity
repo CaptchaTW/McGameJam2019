@@ -150,7 +150,7 @@ MonoBehaviour:
   SceneName: ShelfInside
   x: 0
   key: 0
-  sound: 
+  sound: open
 --- !u!65 &406375054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   SceneName: HallwayStairs
   x: 33
   key: 0
-  sound: door
+  sound: close
 --- !u!65 &587213392
 BoxCollider:
   m_ObjectHideFlags: 0

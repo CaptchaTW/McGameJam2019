@@ -480,7 +480,7 @@ MonoBehaviour:
   SceneName: Basement
   x: 0
   key: 4
-  sound: door
+  sound: open
 --- !u!65 &997729995
 BoxCollider:
   m_ObjectHideFlags: 0
