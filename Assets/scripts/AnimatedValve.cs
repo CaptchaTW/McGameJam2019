@@ -35,6 +35,7 @@ public class AnimatedValve : MonoBehaviour
             sr.sprite = newSprite;
             timer = 0;
             frame = 1;
+            SoundScript.PlaySound("valve");
         }
 
         if (timer > 0.1 && frame == 1)

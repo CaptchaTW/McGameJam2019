@@ -66,12 +66,13 @@ public class RooftopAnimation : MonoBehaviour
 
         if (timer > 5 && frame == 6)
         {
+            SoundScript.PlaySound("reallyspookyshimmer");
             timer = 0;
             sr.sprite = newSprite5;
             frame = 7;
         }
 
-        if (timer > 2 && frame == 7)
+        if (timer > 3 && frame == 7)
         {
             GlobalVars.cameraX = 0;
             SceneManager.LoadScene("Bathroom");

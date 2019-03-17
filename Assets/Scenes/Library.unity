@@ -508,6 +508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorLocked: {fileID: 0}
   cursorUnlocked: {fileID: 2800000, guid: 586ce3cab7bde154c89733229caa8fb7, type: 3}
+  key: 0
 --- !u!1 &1581149689
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,7 +780,7 @@ MonoBehaviour:
   SceneName: RedBook
   x: 0
   key: 0
-  sound: 
+  sound: door
 --- !u!65 &1730361332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -866,6 +867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorLocked: {fileID: 0}
   cursorUnlocked: {fileID: 2800000, guid: 76ea7e2e769c5984b86ae1433f70cd5f, type: 3}
+  key: 0
 --- !u!1 &2007115704
 GameObject:
   m_ObjectHideFlags: 0

@@ -165,7 +165,7 @@ MonoBehaviour:
   SceneName: Classroom
   x: 0
   key: 0
-  sound: 
+  sound: close
 --- !u!65 &116465672
 BoxCollider:
   m_ObjectHideFlags: 0
