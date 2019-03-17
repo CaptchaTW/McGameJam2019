@@ -14,9 +14,8 @@ public class SceneChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -48,14 +47,19 @@ public class SceneChanger : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (gameObject.tag == "Locked" && GlobalVars.inventoryOfKeys[key] == true)
+        // if i have the key but didnt use it
+        if (GlobalVars.inventoryOfKeys[key] && !GlobalVars.keyStatus[key])
         {
-            gameObject.tag = "Unlocked";
+            GlobalVars.keyStatus[key] = true;
             Debug.Log("Unlocked with key" + key);
         }
-        else if (gameObject.tag != "Locked")
+        else if (!GlobalVars.inventoryOfKeys[key]){
+            Debug.Log("Locked");
+        }
+
+        else
         {
-            if (SceneName.Equals("MusicRoom") || 
+            if ((SceneName.Equals("MusicRoom") && !SceneManager.GetActiveScene().name.Equals("Piano"))|| 
                 SceneName.Equals("Classroom") ||
                 (SceneName.Equals("Staircase") && !SceneManager.GetActiveScene().name.Equals("StairsDown"))||
                 (SceneName.Equals("Library") && !SceneManager.GetActiveScene().name.Equals("RedBook")) || 
@@ -94,11 +98,6 @@ public class SceneChanger : MonoBehaviour
                 Debug.Log("Clicked");
             }
             GlobalVars.cameraX = x;
-        }
-        else
-        {
-            Debug.Log("key is " + key + " and " + GlobalVars.inventoryOfKeys[key]);
-            // Debug.Log("Locked");
         }
 
         // GameObject.Find("Main Camera").transform.position = new Vector3(x, 0, 0);

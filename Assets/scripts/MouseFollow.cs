@@ -34,7 +34,7 @@ public class MouseFollow : MonoBehaviour
                 }
             }
 
-            // Debug.Log(transform.position.x);
+            Debug.Log(transform.position.x);
            
             posBounds = new Vector3(posBounds.x - Time.deltaTime * mvmt, posBounds.y, transform.position.z);
            
@@ -51,7 +51,7 @@ public class MouseFollow : MonoBehaviour
                     mvmt = mvmt + 3;
                 }
             }
-           // Debug.Log(transform.position.x);
+           Debug.Log(transform.position.x);
             //transform.position -= new Vector3(Time.deltaTime * speed, transform.position.y, transform.position.z);
             
             posBounds = new Vector3(posBounds.x + Time.deltaTime * mvmt, posBounds.y, transform.position.z);
