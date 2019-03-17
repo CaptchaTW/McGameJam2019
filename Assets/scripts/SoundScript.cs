@@ -10,6 +10,8 @@ public class SoundScript : MonoBehaviour
     public static AudioClip valve, doorOpen, doorClose, bgNoise;
     public static AudioClip note1, note2, note3, note4;
 
+    public static string[] clips = { "doorcreak", "floorcreak", "footsteps" };
+
     static AudioSource audioSource;
 
     // Start is called before the first frame update
