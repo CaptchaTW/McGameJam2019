@@ -28,37 +28,37 @@ public class RooftopAnimation : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if (GlobalVars.currentCameraX < 5 && frame == 0)
+        if (GlobalVars.currentCameraX < 7 && frame == 0)
         {
             frame = 1;
         }
 
-        if (GlobalVars.currentCameraX > 41 && frame == 1)
+        if (GlobalVars.currentCameraX > 38 && frame == 1)
         {
             sr.sprite = newSprite;
             frame = 2;
         }
 
-        if (GlobalVars.currentCameraX < 5 && frame == 2)
+        if (GlobalVars.currentCameraX < 7 && frame == 2)
         {
             sr.sprite = newSprite2;
             GlobalVars.dissapearingDoor = true;
             frame = 3;
         }
 
-        if (GlobalVars.currentCameraX > 41 && frame == 3)
+        if (GlobalVars.currentCameraX > 38 && frame == 3)
         {
             sr.sprite = newSprite3;
             frame = 4;
         }
 
-        if (GlobalVars.currentCameraX < 5 && frame == 4)
+        if (GlobalVars.currentCameraX < 7 && frame == 4)
         {
             sr.sprite = newSprite4;
             frame = 5;
         }
 
-        if (GlobalVars.currentCameraX < 41 && frame == 5)
+        if (GlobalVars.currentCameraX > 38 && frame == 5)
         {
             timer = 0;
             frame = 6;
@@ -73,10 +73,11 @@ public class RooftopAnimation : MonoBehaviour
 
         if (timer > 2 && frame == 7)
         {
-
+            GlobalVars.cameraX = 0;
+            SceneManager.LoadScene("Bathroom");
             GlobalVars.inventoryOfKeys[5] = true;
             GlobalVars.keyStatus[5] = true;
-            SceneManager.LoadScene("Bathroom");
+
         }
 
 
