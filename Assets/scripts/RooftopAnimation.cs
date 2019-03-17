@@ -70,6 +70,7 @@ public class RooftopAnimation : MonoBehaviour
             timer = 0;
             sr.sprite = newSprite5;
             frame = 7;
+            SoundScript.PlaySound("collapsebricks");
         }
 
         if (timer > 3 && frame == 7)
