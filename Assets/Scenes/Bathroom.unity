@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 731881695}
   - component: {fileID: 731881694}
   - component: {fileID: 731881693}
+  - component: {fileID: 731881698}
   m_Layer: 0
   m_Name: BathroomDoor
   m_TagString: Untagged
@@ -231,6 +232,7 @@ MonoBehaviour:
   SceneName: BathroomDoor
   x: 1.348
   key: 0
+  sound: door
 --- !u!65 &731881694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -303,6 +305,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731881698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731881692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 586ce3cab7bde154c89733229caa8fb7, type: 3}
 --- !u!1 &1097696660
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +332,7 @@ GameObject:
   - component: {fileID: 1097696662}
   - component: {fileID: 1097696661}
   - component: {fileID: 1097696665}
+  - component: {fileID: 1097696666}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -412,6 +429,21 @@ MonoBehaviour:
   SceneName: Mirror
   x: 0
   key: 0
+  sound: 
+--- !u!114 &1097696666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097696660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 76ea7e2e769c5984b86ae1433f70cd5f, type: 3}
 --- !u!1 &1149615555
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +678,7 @@ GameObject:
   - component: {fileID: 1475086146}
   - component: {fileID: 1475086145}
   - component: {fileID: 1475086144}
+  - component: {fileID: 1475086149}
   m_Layer: 0
   m_Name: Valve
   m_TagString: Untagged
@@ -738,6 +771,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475086149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475086143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 079af8c8019ae5a48b2fe4a5283d5318, type: 3}
 --- !u!1 &1983813579
 GameObject:
   m_ObjectHideFlags: 0

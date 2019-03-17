@@ -412,6 +412,7 @@ GameObject:
   - component: {fileID: 462458825}
   - component: {fileID: 462458824}
   - component: {fileID: 462458823}
+  - component: {fileID: 462458828}
   m_Layer: 0
   m_Name: Bathroom
   m_TagString: Locked
@@ -508,6 +509,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &462458828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462458822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 2800000, guid: eeaac754d06e11d4aba09eb1228e08ef, type: 3}
+  cursorUnlocked: {fileID: 2800000, guid: 586ce3cab7bde154c89733229caa8fb7, type: 3}
 --- !u!1 &1433208278
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +536,7 @@ GameObject:
   - component: {fileID: 1433208281}
   - component: {fileID: 1433208280}
   - component: {fileID: 1433208279}
+  - component: {fileID: 1433208284}
   m_Layer: 0
   m_Name: Lockers
   m_TagString: Untagged
@@ -617,6 +633,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1433208284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433208278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: 9dda300aa192c7541a6294b86d705a9e, type: 3}
 --- !u!1 &1722647214
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +742,7 @@ GameObject:
   - component: {fileID: 1920725292}
   - component: {fileID: 1920725291}
   - component: {fileID: 1920725290}
+  - component: {fileID: 1920725295}
   m_Layer: 0
   m_Name: HallwayStairs
   m_TagString: Untagged
@@ -808,3 +839,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1920725295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920725289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67c19c1f170a248b4badbf8525accb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorLocked: {fileID: 0}
+  cursorUnlocked: {fileID: 2800000, guid: c68a80017d3583643b738fdb85f2c648, type: 3}
