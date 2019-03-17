@@ -40,7 +40,7 @@ public class SceneChanger : MonoBehaviour
         a1.gameObject.SetActive(false);
         a2.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(2.0f);
         Debug.Log("waited");
         wait = false;
         SceneManager.LoadScene(SceneName);
