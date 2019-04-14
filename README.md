@@ -1,2 +1,2 @@
 # McGameJam2019
-Click and Point Horror Game
+Point and Click Horror Game
